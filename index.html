@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Три в ряд</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="energy-panel">
+            <div class="energy-icon"></div>
+            <span id="energy-count">5/5</span>
+            <span class="energy-timer" id="energy-timer"></span>
+        </div>
+        
+        <div class="level-goals" id="level-goals">
+            <!-- Цели уровня будут добавлены динамически -->
+        </div>
+
+        <div class="score-panel">
+            <div class="score">Очки: <span id="score">0</span></div>
+            <div class="moves">Ходы: <span id="moves">30</span></div>
+        </div>
+
+        <div class="booster-panel">
+            <div class="booster" id="hammer-booster">
+                🔨
+                <span class="booster-count">2</span>
+            </div>
+            <div class="booster" id="swap-booster">
+                🔄
+                <span class="booster-count">2</span>
+            </div>
+            <div class="booster" id="rainbow-booster">
+                🌈
+                <span class="booster-count">1</span>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div id="grid"></div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html> 
